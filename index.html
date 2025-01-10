@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/646a85ac89.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   
+
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+   
+    <title>Wed Site</title>
+</head>
+<body>
+    <div>
+
+        <header class="header">
+           
+            <a href="index.html"> <i id="logo" class="fa-solid fa-dragon fa-bounce"></i></a>
+            
+            <nav class="navegador">
+               
+                
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                      <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="opciones">
+                        <li>
+                            <a class="click" href="">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="click" href="">Acerca de mi</a>
+                        </li>
+                        <li>
+                            <a class="click" href=""> Conocimientos</a>
+                        </li>
+
+                    </ul>
+              
+                
+            </nav>
+           
+
+        </header>
+        
+        <main>
+            <section class="seccionuno">
+                <div class="texto" >
+                    <h>Acerca de mi</h3>
+                     <p class="parrafo-uno">Bienvenido a mi pagina!<br>  Aquí aprenderás más 
+                    sobre mi. Me llamo JN y me gusta la programaciòn </p>
+                </div>
+                
+                 <img class="imagenuno" src="imagenes/imagen.png" alt="imagen  programación">
+        
+            </section>
+
+            <section class="secciondos">
+                 <img src="imagenes/imagen2.png" alt="imagen programación dos ">
+            </section>
+
+
+
+            <section class="conocimientos">
+
+                    <div class="textoconocimientos">
+                        <img src="imagenes/miniatura.png" alt="miniautrauno">
+
+                        <h3>Java</h3>
+                        <p>Aprendiendo Java para expandir capacidades en desarrollo web, aplicaciones móviles y sistemas informáticos.</p>
+                    </div>
+                    <div class="textoconocimientos">
+                        <img src="imagenes/miniaturados.png" alt="miniaturados">
+
+                        <h3>Python</h3>
+                        <p>Explorando Python para análisis de datos y automatización.</p>
+                    </div>
+                    <div class="textoconocimientos">
+                         <img src="imagenes/miniaturatres.png" alt="miniaturatres">
+                         <h3>C#</h3>
+                         <p>Desarrollando habilidades en C# para crear aplicaciones eficientes y escalables.</p>
+                    </div>
+            </section>
+
+    
+            
+        </main>
+        <footer class="footer">
+            <!-- formaulario-->
+            <form action="#"  method="post" class="formulario">
+                <h3>Contactanos en:</h3>
+                <div class="contenedorinputs">
+                    <ul>
+                        <label for="nombreid">Nombre</label><br>
+                        <input type="text" name="nombre" id="nombreid" class="imputformu">
+                    </ul>
+                    <ul>
+                        <label for="emailId">Email</label> <br>
+                        <input type="text" name="Email" id="emailId" class="imputformu">
+                    </ul>
+                    <ul>
+                        <label for="mensajeId"> Mensaje</label><br>
+                        <textarea name="Mensaje" id="40" cols="36" rows="10" class="mensajeinput"> </textarea>
+                    </ul>
+                    <ul>
+                        <input type="submit" value="enviar" class="botonEnviar">
+                    </ul>
+                    <h3 id="alerta"></h3>
+                </div>
+                
+                
+            </form>
+
+            <!--formulario end-->
+
+            <h3>Redes sociales</h3>
+            <nav class="contactos">
+                <ul>
+                    <li>
+                        <a class="click" href="">Youtube</a>
+                    </li>
+                    <li>
+                        <a class="click" href="">Fecebook</a>
+                    </li>
+                    <li>
+                        <a class="click" href="">Whatsapp</a>
+                    </li>
+                   
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

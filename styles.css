@@ -1,0 +1,197 @@
+*{
+    color: white;
+    box-sizing:content-box;
+}
+body{
+    background-color:black ;
+  
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Micro 5", sans-serif;
+    font-size:x-large;
+}
+main{
+    color: white;
+}
+
+.header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(32, 32, 32);
+    padding: 0.6em;
+
+}
+
+.opciones {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    gap: 3em;
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+#logo{
+    color: white;
+    font-size: 2em;
+}
+.seccionuno{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    flex-wrap: wrap;
+
+
+}
+.texto{
+    width: 12em;
+  
+}
+.imagenuno{
+    width:40% ;
+    height:40% ;
+    border-radius:50px;
+    margin: 20px;
+    border: 10px solid rgb(46, 46, 46);
+}
+
+.secciondos img{
+   
+    width: 100%;
+    height: 12em;
+}
+.contactos ul {
+   list-style: none;
+   
+}
+.click{
+    text-decoration: none;
+    color: inherit;
+}
+/*imagens miniatura*/
+.conocimientos {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conocimientos img{
+    width:9em;
+    border: 10px solid rgb(34, 34, 34);
+    border-radius: 10%;
+
+    
+}
+.textoconocimientos{
+    display: block;
+    text-align: center;
+   
+}
+.textoconocimientos p{
+    width:18em ;
+}
+
+
+/***************solamente edición de actividades*******************/
+
+
+.click:hover{
+   
+    border-radius: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: left;
+    background-color: rgb(83, 83, 83);
+    color: rgb(132, 235, 200);
+   
+}
+
+/**********************************/
+
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+
+
+
+
+/* formaulario */
+
+.formulario{
+    background-color: rgb(37, 37, 37);
+    border-radius: 1em;
+    margin: 10%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contenedorinputs{
+    border: 0.2em solid rgb(187, 185, 185);
+    border-radius: 1em;
+    justify-content: center;
+    text-align: center;
+}
+.imputformu{
+    background-color: rgb(58, 58, 58);
+    border-radius: 1em;
+    width: 20em;
+    height: 2em;
+}
+.mensajeinput{
+    background-color: rgb(58, 58, 58);
+    border-radius: 1em;
+}
+.botonEnviar{
+    background-color: brown;
+    border-radius: 1em;
+    width: 8em;
+    height: 2em;
+    
+}
+#alerta{
+    color: red;
+}
+
+
+/* formaulario */
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 608px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+   .header{
+        background-color: rgb(214, 38, 38);
+    }
+   
+    .checkbtn{
+        display: block;
+    }
+    .opciones{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(49, 49, 49);
+        top: 60px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+     #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    .opciones li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .header nav ul li a{
+        font-size: 30px;
+    }
+  }
